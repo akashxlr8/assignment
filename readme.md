@@ -17,6 +17,8 @@ A conversational AI assistant that helps users query their travel information us
 ## Live Demo
 
 The application is deployed and accessible at: https://assignment-rag.streamlit.app/
+![image](https://github.com/user-attachments/assets/88256d70-5c81-421f-a0d3-13dce21a05d9)
+
 
 
 ## Project Structure
