@@ -28,7 +28,7 @@ class TravelAssistant:
     - Keep the response concise and focused on the question
     - If dates and times are mentioned, format them clearly so the user can understand them like this: 11 July 2024 at 14:35
     
-    Please provide your response in a clear, natural language format. Do not add 'Here is the information you requested:, your response, etc.' or anything like that.
+    Please provide your response in a clear, natural language format. Do not add 'Here is the information you requested:, your response, note:, the repose is provided based on a context etc.' or anything like that. Appear as a human would.
     """
 
     def __init__(self):
