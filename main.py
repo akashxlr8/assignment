@@ -1,10 +1,11 @@
 from huggingface_hub import InferenceClient
 from rag import TravelAssistant
 import os
+import streamlit as st
 
 def chat_with_model(prompt, model="mistralai/Mixtral-8x7B-Instruct-v0.1", max_tokens=1000):
     try:
-        client = InferenceClient(token=os.getenv("HF_TOKEN"))
+        client = InferenceClient(st.secrets["HF_TOKEN"])
         response = client.text_generation(
             model=model,
             prompt=prompt,

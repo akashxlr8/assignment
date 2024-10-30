@@ -8,6 +8,7 @@ from pinecone import Pinecone, ServerlessSpec
 from langchain_text_splitters import RecursiveJsonSplitter
 from langchain_community.embeddings import JinaEmbeddings
 from langchain_pinecone import PineconeVectorStore
+import streamlit as st
 
 class TravelAssistant:
     PROMPT = """
@@ -39,9 +40,9 @@ class TravelAssistant:
 
     def __init__(self):
         load_dotenv()
-        self.pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+        self.pc = Pinecone(api_key=st.secrets["PINECONE_API_KEY"])
         self.text_embeddings = JinaEmbeddings(
-            jina_api_key=os.getenv("JINA_API_KEY"),
+            jina_api_key=st.secrets["JINA_API_KEY"],
             model_name="jina-embeddings-v2-base-en"
         )
         self.index_name = "example-index2"
