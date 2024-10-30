@@ -12,7 +12,7 @@ import streamlit as st
 
 class TravelAssistant:
     PROMPT = """
-    You are a helpful travel assistant. Using the JSON travel information provided between <context> tags, answer the question between <question> tags.
+    You are a helpful information retrieval assistant. Using the JSON travel information provided between <context> tags, answer the question between <question> tags.
 
     <context>
     {context}
