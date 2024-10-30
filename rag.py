@@ -24,17 +24,10 @@ class TravelAssistant:
 
     Instructions:
     - If the information contains flight details, include the flight number, departure/arrival times, and airports
-    - If the information contains hotel details, include the hotel name, check-in/check-out times, and room details
-    - If dates are mentioned, format them clearly
     - If the requested information is not found in the context, say so clearly
     - Keep the response concise and focused on the question
-    - Include only relevant details from the context
-
-    Response format:
-    - Start with a direct answer to the question
-    - Add relevant supporting details if available
-    - End with any important related information
-
+    - If dates and times are mentioned, format them clearly so the user can understand them like this: 11 July 2024 at 14:35
+    
     Please provide your response in a clear, natural language format.
     """
 
